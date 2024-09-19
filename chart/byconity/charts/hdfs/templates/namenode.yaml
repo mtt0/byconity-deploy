@@ -118,7 +118,7 @@ spec:
           defaultMode: 0755
       {{- end }}
       {{- end }}
-      {{- with .Values.datanode.securityContext }}
+      {{- with .Values.namenode.securityContext }}
       securityContext:
         {{- toYaml . | nindent 8 }}
       {{- end }}
